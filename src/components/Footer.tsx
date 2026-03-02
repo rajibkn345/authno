@@ -185,7 +185,7 @@ export default function Footer() {
             letterSpacing: '0.05em',
             textTransform: 'uppercase'
           }}>
-            2025 AUTHNO © ALL RIGHTS RESERVED.
+            2026 AUTHNO © ALL RIGHTS RESERVED.
           </span>
         </div>
       </div>
