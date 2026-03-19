@@ -3,7 +3,7 @@
 export default function AboutUsSection() {
   return (
     <>
-      <section
+      <section className="c-about-us-section"
         style={{
           padding: '2rem 0',
           backgroundColor: 'white',
@@ -159,7 +159,7 @@ export default function AboutUsSection() {
           alignItems: 'center',
         }}
       >
-        <div
+        <div className="c-our-process"
           style={{
             maxWidth: '1400px',
             margin: '0 auto',
@@ -193,6 +193,7 @@ export default function AboutUsSection() {
               marginBottom: '2rem',
               fontWeight: '400',
               width: '100%',
+              textTransform:'uppercase'
             }}
           >
             Our process is designed for ease and accuracy. Simply start by

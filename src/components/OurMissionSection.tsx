@@ -3,24 +3,24 @@
 export default function OurMissionSection() {
   return (
     <section style={{
-      padding: '2rem 0 2rem 0',
+      padding: '2rem 0 1rem 0',
       backgroundColor: 'white',
       minHeight: '40vh',
       display: 'flex',
       alignItems: 'center'
     }}>
-      <div className="our-mission-container" style={{
+      <div className="flex c-our-mission" style={{
         maxWidth: '1400px',
-        margin: '0 auto',
-        padding: '0 2rem',
-        width: '100%',
         display: 'grid',
         gridTemplateColumns: '1fr 1fr',
+        margin: '4rem auto 0', 
+        padding: '0 2rem',
+        width: '100%',
         gap: '4rem',
         alignItems: 'center'
       }}>
         {/* Left Content */}
-        <div style={{
+        <div className="c-our-mission-content" style={{
           display: 'flex',
           flexDirection: 'column',
           gap: '2rem'

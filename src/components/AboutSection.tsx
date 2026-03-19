@@ -18,7 +18,7 @@ export default function AboutSection() {
         padding: '0 2rem'
       }}>
         {/* About Us Section */}
-        <div className="about-main-container" style={{
+        <div className="about-main-container flex " style={{
           display: 'grid',
           gridTemplateColumns: '1fr 1fr',
           gap: '4rem',
@@ -117,10 +117,10 @@ export default function AboutSection() {
         </div>
 
         {/* How It Works Section */}
-        <div style={{
+        <div className="c-how-it-work" style={{
           marginTop: '6rem'
         }}>
-          <div style={{
+          <div className='c-how-it-work-container' style={{
             maxWidth: '1400px',
             margin: '0 auto',
             padding: '0 0rem',
@@ -130,9 +130,7 @@ export default function AboutSection() {
             alignItems: 'center'
           }}>
             {/* Left Content */}
-            <div style={{
-              textAlign: 'left'
-            }}>
+            <div className="c-how-it-content" >
               {/* Main Heading */}
               <h2 style={{
                 fontSize: '32px',

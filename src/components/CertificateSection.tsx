@@ -147,7 +147,7 @@ export default function CertificateSection() {
             letterSpacing: '0%',
             textTransform: 'uppercase'
           }}>
-            FOR REGISTER USER
+            FOR REGISTERED USER
           </h3>
 
           <div className="certificate-steps-grid" style={{

@@ -33,7 +33,7 @@ export default function Footer() {
         },
         body: JSON.stringify({
           email: email,
-          to: 'rkrajib345@gmail.com',
+          to: 'andy@authno.com',
           subject: 'New Subscription from Authno Website',
           message: `New subscriber: ${email}`
         }),
@@ -185,7 +185,7 @@ export default function Footer() {
             letterSpacing: '0.05em',
             textTransform: 'uppercase'
           }}>
-            2025 AUTHNO © ALL RIGHTS RESERVED.
+            2026 AUTHNO © ALL RIGHTS RESERVED.
           </span>
         </div>
       </div>

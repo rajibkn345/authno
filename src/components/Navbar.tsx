@@ -4,6 +4,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { useState } from 'react';
 
+
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -29,7 +30,7 @@ export default function Navbar() {
       boxShadow: '0 2px 10px rgba(0, 0, 0, 0.1)',
       transition: 'all 0.3s ease'
     }}>
-                   <div className="navbar-container" style={{
+      <div className="navbar-container" style={{
         maxWidth: '1400px',
         margin: '0 auto',
         padding: '0 2rem !important',
@@ -50,16 +51,12 @@ export default function Navbar() {
             alignItems: 'center',
             textDecoration: 'none'
           }}>
-            <Image
-              src="/Logo.jpg"
+            <img
+              src="Logo.jpg"
               alt="Authno Logo"
-              width={120}
-              height={40}
-              style={{
-                height: 'clamp(30px, 6vw, 40px)',
-                width: 'auto',
-                objectFit: 'contain'
-              }}
+              width="auto"
+              height="40"
+              
             />
           </Link>
         </div>

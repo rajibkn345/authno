@@ -15,18 +15,13 @@ export async function POST(request: NextRequest) {
     }
 
     // Create transporter using Gmail SMTP
-    const transporter = nodemailer.createTransport({
-      service: 'gmail',
-      auth: {
-        user: process.env.EMAIL_USER,
-        pass: process.env.EMAIL_PASS,
-      },
-    });
+const transporter = nodemailer.createTransport({ service: 'gmail', auth: { user: process.env.EMAIL_USER, pass: process.env.EMAIL_PASS, }, });
+
 
     // Email content
     const mailOptions = {
       from: process.env.EMAIL_USER,
-      to: to || 'rkrajib345@gmail.com',
+      to: to || 'andy@authno.com',
       subject: subject || 'New Subscription from Authno Website',
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
@@ -49,7 +44,7 @@ export async function POST(request: NextRequest) {
     const result = await transporter.sendMail(mailOptions);
     console.log('Email sent successfully:', result.messageId);
 
-    return NextResponse.json({ success: true, message: 'Email sent successfully' });
+    return NextResponse.json({ success: true, message: 'Email sent successfully',response:result, messageId:result.messageId });
   } catch (error: unknown) {
     console.error('Email sending error:', error);
 

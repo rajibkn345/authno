@@ -9,17 +9,16 @@ export default function HowItWorksHero() {
        display: 'flex',
        alignItems: 'center'
      }}>
-             <div className="how-it-works-hero-container" style={{
+             <div className="flex c-how-it-hero" style={{
          maxWidth: '1400px',
          margin: '0 auto',
-         padding: '0 ',
-         display: 'grid',
-         gridTemplateColumns: '1fr 1fr',
+         padding: '0 2rem',
+        width:'100%',
          gap: '4rem',
          alignItems: 'center'
        }}>
         {/* Left Section - Text Content */}
-                 <div style={{
+                 <div  className=" c-how-it-content" style={{
            display: 'flex',
            flexDirection: 'column',
            gap: '1.5rem'

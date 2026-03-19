@@ -6,6 +6,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+   -webkit-tap-highlight-color: transparent;
 }
 
 body {
@@ -13,6 +14,10 @@ body {
   color: #ffffff;
   font-family: 'Helvetica Neue', Helvetica, Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
   overflow-x: hidden;
+  
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
 
 html {
@@ -281,7 +286,16 @@ html {
     gap: 2rem !important;
     text-align: center !important;
   }
-  
+  .c-how-it-work-container,.c-how-it-hero,.c-our-mission{
+  display:flex !important;
+  flex-direction:column;
+  }
+  .c-our-mission{
+    margin-top: 4rem !important;
+  }
+  .c-how-it-content,.c-our-mission-content,.c-about-us-section,.c-our-process{
+    text-align:center;
+  } 
   /* About Us section bottom padding for tablet and mobile */
   section {
     padding-bottom: 2rem !important;
